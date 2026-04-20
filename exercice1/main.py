@@ -1,4 +1,4 @@
-# nums[i] + nums[j] = target
+rget
 
 def two_sum(nums, target):
     for i in range(len(nums)):
@@ -9,7 +9,6 @@ def two_sum(nums, target):
 
 def two_sum_dict(nums, target):
     seen_num = {}
-
     for i, num in enumerate(nums):
         reste = target - num
         if reste in seen_num:
@@ -20,20 +19,15 @@ def two_sum_dict(nums, target):
 def exec_fcnt():
     # Saisir nums :
     nums_input = input("Entrer des nombres séparés par espace : ")
-
     liste_nums_str = nums_input.split()
     nums = []
-
     for x in liste_nums_str:
         nums.append(int(x))
-
     print(nums)
 
     # Saisir target :
     target_input = input("Saisir la valeur de target : ")
-
     target = int(target_input)
-
     return two_sum_dict(nums, target)
 
 print(exec_fcnt())
